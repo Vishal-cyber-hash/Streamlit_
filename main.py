@@ -45,7 +45,7 @@ option = st.sidebar.radio("Go to", ['Home', 'About', 'Contact', 'Login', 'Logout
 if option == 'Home':
     st.title("Welcome to the Home Page")
     st.image(
-        "https://via.placeholder.com/800x400.png?text=Your+Photo+Here",
+        "https://pbs.twimg.com/profile_images/1479319209268039687/0MqEsvvo_400x400.jpg",
         caption='Photo Displayed Here',
         use_column_width=True
     )
