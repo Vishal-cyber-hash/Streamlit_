@@ -2,7 +2,7 @@ import streamlit as st
 from pymongo import MongoClient
 
 # Connect to MongoDB
-client = MongoClient("mongodb+srv://UserName:Password@learn.jv0fm.mongodb.net/youtube")
+client = MongoClient("mongodb+srv://Learnpy:Akku@learn.jv0fm.mongodb.net/youtube")
 db = client['youtube']  # Database name
 users_collection = db['users']  # Collection for user data
 
