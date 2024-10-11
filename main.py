@@ -16,26 +16,6 @@ def create_account(username, password):
         users_collection.insert_one({"username": username, "password": password})
         return "Account created successfully!"
 
-# Set custom CSS for the gold background
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #FFD700;  /* Gold color */
-        color: #000000;  /* Text color */
-    }
-    .title {
-        color: #DAA520;  /* Darker gold color for title */
-    }
-    .footer {
-        text-align: center;
-        font-size: 14px;
-        color: #000000; /* Footer text color */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # Header with navigation options
 st.sidebar.title("Navigation")
@@ -45,7 +25,7 @@ option = st.sidebar.radio("Go to", ['Home', 'About', 'Contact', 'Login', 'Logout
 if option == 'Home':
     st.title("Welcome to the Home Page")
     st.image(
-        "https://pbs.twimg.com/profile_images/1479319209268039687/0MqEsvvo_400x400.jpg",
+        "https://cdn.pixabay.com/photo/2024/03/07/02/58/ai-generated-8617472_1280.jpg",
         caption='Photo Displayed Here',
         use_column_width=True
     )
